@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+:root{
+    --main-color: #BF9B30;
+    --btn-hover: #E7BC3C;
+    --bg-cv: #22395D;
+}
+body{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+.gold-border{
+    border: 1px solid var(--main-color);
+    width: 6%;
+}
+.btn-golden-border {
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.active, .bg-gold{
+    background-color: var(--main-color);
+}
+.background-transparent{
+    background-color: rgba(0, 0, 0, 0.199);
+}
+.btn-gold-hover:hover{
+    background-color: var(--btn-hover);
+}
+.form-container input,
+.form-container textarea{
+    background-color: #393939;
+    border: none;
+    color: white;
+}
+.form-container input::placeholder,
+.form-container textarea::placeholder { 
+    color: white;
+}
+.form-container input:placeholder-shown,
+.form-container input:not(:placeholder-shown),
+.form-container textarea:placeholder-shown,
+.form-container textarea:not(:placeholder-shown){
+    background-color:  #393939!important;
+    color: white;
+}
+.btns-form-part .btn{
+    width: 13vw;
+}
+.golden-dashed-border{
+    border: 2px dashed var(--main-color);
+    border-radius: 5px;
+}
+.gold-txt{
+    color: var(--main-color);
+}
+.small-txt{
+    font-size: 12px;
+}
+.browse-txt{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.cv-container .cv-height{
+    height: 842px;
+}
+.cv-container .bg-blue-side{
+    background-color: var(--bg-cv);
+}
+.txt-border-bottom{
+    border-bottom: 3px solid var(--bg-cv);
+    width: 12%;
+}
+.txt-dark-blue{
+    color: var(--bg-cv);
+}
+.tiny-txt{
+    font-size: 10px;
+}
+.bg-transparent2{
+    background-color: rgba(0, 0, 0, 0.199);
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.step-button {
+    transition: .4s;
+}
+.step-button[aria-expanded="true"] {
+    background-color: var(--main-color);
+    color: #fff;
+}
+.step-button[aria-expanded="false"] {
+background: none;
+color: white;
+}
+.done {
+    background-color: var(--main-color);
+    color: #fff;
+}
+.step-item {
+    z-index: 10;
+    text-align: center;
+}
+#progress {
+  -webkit-appearance:none;
+    position: absolute;
+    width: 95%;
+    z-index: 5;
+    height: 10px;
+    margin-left: 18px;
+    margin-bottom: 18px;
+}
+/* to customize progress bar */
+#progress::-webkit-progress-value {
+    background-color: var(--main-color);
+    transition: .5s ease;
+}

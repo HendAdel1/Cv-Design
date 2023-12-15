@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cv</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha384-all.min.css" crossorigin="anonymous" />
+
+  <!-- for country code  -->
+  <link rel="stylesheet" href="css/intlTelInput.css">
+
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+
+  <!-- Start small title -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p class="my-2">Create CV</p>
+        <div class="gold-border"></div>
+        <p class="pt-2">6th June 2023</p>
+      </div>
+    </div>
+  </div>
+  <!-- End small title -->
+
+  <!-- Start big title -->
+  <div class="container pt-4">
+    <div class="row">
+      <h2>Customize your cv</h2>
+      <p class="col-md-12 col-lg-5">Here you can create your CV by answering question and getting it
+        ready for download or applying to jobs through the platform.
+      </p>
+    </div>
+  </div>
+  <!-- End big title -->
+
+  <!-- Start stepper -->
+  <!-- <div class="container px-4 py-4 background-transparent rounded">
+    <div class="row">
+      <div class="col d-flex align-items-center">
+        <div class="step btn-golden-border me-3 active">1</div>
+        <span class="text-uppercase">main information</span>
+      </div>
+      <div class="col d-flex align-items-center">
+        <div class="step btn-golden-border me-3">2</div>
+        <span class="text-uppercase">summary</span>
+      </div>
+      <div class="col d-flex align-items-center">
+        <div class="step btn-golden-border me-3">3</div>
+        <span class="text-uppercase">skills</span>
+      </div>
+      <div class="col d-flex align-items-center">
+        <div class="step btn-golden-border me-3">4</div>
+        <span class="text-uppercase">experience</span>
+      </div>
+      <div class="col d-flex align-items-center">
+        <div class="step btn-golden-border me-3">5</div>
+        <span class="text-uppercase">education</span>
+      </div>
+    </div>
+  </div> -->
+  <!-- End stepper -->
+
+  <!-- Start stepper -->
+  <div class="container">
+    <div class="accordion" id="accordionExample">
+      <div class="steps">
+        <div class="step-item d-flex align-items-center">
+          <button class="step step-button btn-golden-border text-center" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">1</button>
+          <div class="step-title ms-3">main information</div>
+        </div>
+        <div class="step-item d-flex align-items-center">
+          <button class="step step-button btn-golden-border text-center collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+            aria-controls="collapseTwo">2</button>
+          <div class="step-title ms-3">about</div>
+        </div>
+        <div class="step-item d-flex align-items-center">
+          <button class="step step-button btn-golden-border text-center collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+            aria-controls="collapseThree">3</button>
+          <div class="step-title ms-3">skills</div>
+        </div>
+        <div class="step-item d-flex align-items-center">
+          <button class="step step-button btn-golden-border text-center collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+            aria-controls="collapseFour">4</button>
+          <div class="step-title ms-3">experience</div>
+        </div>
+        <div class="step-item d-flex align-items-center">
+          <button class="step step-button btn-golden-border text-center collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+            aria-controls="collapseFive">5</button>
+          <div class="step-title ms-3">education</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="accordion" id="accordionExample">
+      <div class="">
+        <div id="headingOne">
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <!-- Start form -->
+          <div class="container mt-4 px-4 py-4 background-transparent rounded form-container d-flex">
+            <form class="col-12 col-md-6 me-md-5">
+              <div class="row">
+                <div class="col-md col-lg me-3">
+                  <label for="firstName" class="mb-3">First Name</label>
+                  <input type="text" class="form-control px-3 py-2" id="firstName" placeholder="Enter your first name">
+                </div>
+                <div class="col-md col-lg">
+                  <label for="lastName" class="mb-3 mt-3 mt-md-0">Last Name</label>
+                  <input type="text" class="form-control px-3 py-2" id="lastName" placeholder="Enter your last name">
+                </div>
+              </div>
+
+              <div class="row mt-3">
+                <div class="col-md col-lg me-3">
+                  <label for="profession" class="mb-3">Profession</label>
+                  <input type="text" class="form-control px-3 py-2" id="profession" placeholder="Enter your profession">
+                </div>
+                <div class="col-md col-lg">
+                  <label for="country" class="mb-3 mt-3 mt-md-0">Country</label>
+                  <input type="text" class="form-control px-3 py-2" id="country" placeholder="Enter your country">
+                </div>
+              </div>
+
+              <div class="row mt-3">
+                <div class="col-md col-lg me-3">
+                  <label for="city" class="mb-3">City</label>
+                  <input type="text" class="form-control px-3 py-2" id="city" placeholder="Enter your city">
+                </div>
+                <div class="col-md col-lg-8">
+                  <label for="phone" class="mb-3 mt-3 mt-md-0">Mobile Number</label><br>
+                  <input type="tel" class="form-control px-5 py-2" id="phone" placeholder="Enter your mobile number">
+                </div>
+              </div>
+
+              <div class="row mt-3">
+                <div class="col-md col-lg">
+                  <label for="email" class="mb-3">Email</label>
+                  <input type="email" class="form-control px-3 py-2" id="email" placeholder="Enter your email">
+                </div>
+              </div>
+
+              <div class="row mt-3">
+                <div class="col-6">
+                  <label for="personalPhoto" class="d-none d-md-block">Personal Photo</label>
+                  <label for="personalPhoto" class="d-md-none">Upload CV</label>
+                </div>
+              </div>
+
+              <div class="row mt-3">
+                <div class="col golden-dashed-border d-flex flex-column align-items-center py-5">
+                  <img src="Images/cloud.png" alt="" width="80px">
+                  <p class="fw-bold mt-3">Drag & drop files or
+                    <label for="personalPhoto" id="fileLink" class="gold-txt browse-txt">Browse</label>
+                    <input type="file" style="display: none;" id="personalPhoto" onchange="updateFileLink(this)">
+                  </p>
+                  <p class="text-secondary small-txt">Supported formates: JPEG, PNG, GIF, MP4, PDF, PSD,
+                    AI, Word, PPT
+                  </p>
+                </div>
+              </div>
+            </form>
+
+            <div class="col-6 d-none d-md-block">
+              <div class="container cv-container">
+                <div class="row cv-height">
+                  <div class="col-4 bg-blue-side">
+                    <img class="rounded-circle bg-secondary my-4" src="Images/r.jpeg" alt="" width="128px">
+
+                    <h5>First Name</h5>
+                    <p class="text-secondary">Profission</p>
+
+                    <div>
+                      <p class="bg-white rounded py-1 px-2 txt-dark-blue">surkarta, birthdate</p>
+                      <p class="bg-white rounded py-1 px-2 txt-dark-blue">number</p>
+                      <p class="bg-white rounded py-1 px-2 txt-dark-blue">email</p>
+                      <p class="bg-white rounded py-1 px-2 txt-dark-blue">city, country</p>
+                    </div>
+
+                    <p class="fw-bold mt-4">Skills</p>
+                    <p class="fw-bold mt-4">Honor & Award</p>
+                    <p class="fw-bold mt-4">Hobbies & Interest</p>
+                    <p class="fw-bold mt-4">Links and Cardentails</p>
+
+                    <div class="d-flex align-items-center">
+                      <a class="text-white text-decoration-none me-3" href="https://www.linkedin.com/" target="_blank"
+                        class="ms-3">
+                        <i class="fab fa-linkedin fs-5 me-2"></i>
+                        <span class="small-txt">Linkedin</span>
+                      </a>
+                      <a class="text-white text-decoration-none" href="https://github.com/" target="_blank"
+                        class="ms-3">
+                        <i class="fab fa-github fs-5 me-2"></i>
+                        <span class="small-txt">Github</span>
+                      </a>
+                    </div>
+                    <div class="mt-2">
+                      <a class="text-white text-decoration-none" href="https://github.com/" target="_blank"
+                        class="ms-3">
+                        <i class="fas fa-external-link-alt fs-5 me-2"></i>
+                        <span class="small-txt">Website</span>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-7 bg-white">
+                    <div class="mx-4 mt-4 ">
+                      <p class="fw-bold txt-border-bottom txt-dark-blue">About</p>
+                      <p class="fw-bold txt-border-bottom txt-dark-blue">Education</p>
+                      <p class="fw-bold txt-border-bottom txt-dark-blue">Experience</p>
+
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- buttons part -->
+          <div class="container btns-form-part">
+            <form>
+              <div class="row my-3">
+                <div class="col-12 col-md-2 mb-3 mb-md-0">
+                  <button type="submit"
+                    class="btn bg-gold text-white text-uppercase btn-gold-hover py-3 w-100">Continue</button>
+                </div>
+                <div class="col-12 col-md-2 order-md-first"><!-- to make continue btn appear first in md sm screens -->
+                  <button type="button"
+                    class="btn btn-secondary text-white text-uppercase me-3 py-3 mb-3 mb-md-0 w-100">Back</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- buttons part -->
+          <!-- End form -->
+        </div>
+      </div>
+      <div class="">
+        <div id="headingTwo">
+        </div>
+
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <!-- Start form -->
+          <div class="container mt-4 px-4 py-4 background-transparent rounded form-container d-flex">
+            <form class="col-12 col-md-6 me-md-5">
+              <div class="row my-3">
+                <div class="col-md col-lg me-3">
+                  <label for="textareaField" class="mb-3">About</label>
+                  <textarea class="form-control px-3 py-2" id="textareaField" rows="5" cols
+                    placeholder="Enter text"></textarea>
+                </div>
+              </div>
+            </form>
+
+            <div class="col-6 d-none d-md-block">
+              <div class="container cv-container">
+                <div class="row cv-height">
+                  <div class="col-4 bg-blue-side">
+                    <img class="rounded-circle bg-secondary my-4" src="Images/r.jpeg" alt="" width="128px">
+
+                    <h5>First Name</h5>
+                    <p class="text-secondary">Profission</p>
+
+                    <div>
+                      <p class="bg-white rounded py-1 px-2 txt-dark-blue">surkarta, birthdate</p>
+                      <p class="bg-white rounded py-1 px-2 txt-dark-blue">number</p>
+                      <p class="bg-white rounded py-1 px-2 txt-dark-blue">email</p>
+                      <p class="bg-white rounded py-1 px-2 txt-dark-blue">city, country</p>
+                    </div>
+
+                    <p class="fw-bold mt-4">Skills</p>
+                    <p class="fw-bold mt-4">Honor & Award</p>
+                    <p class="fw-bold mt-4">Hobbies & Interest</p>
+                    <p class="fw-bold mt-4">Links and Cardentails</p>
+
+                    <div class="d-flex align-items-center">
+                      <a class="text-white text-decoration-none me-3" href="https://www.linkedin.com/" target="_blank"
+                        class="ms-3">
+                        <i class="fab fa-linkedin fs-5 me-2"></i>
+                        <span class="small-txt">Linkedin</span>
+                      </a>
+                      <a class="text-white text-decoration-none" href="https://github.com/" target="_blank"
+                        class="ms-3">
+                        <i class="fab fa-github fs-5 me-2"></i>
+                        <span class="small-txt">Github</span>
+                      </a>
+                    </div>
+                    <div class="mt-2">
+                      <a class="text-white text-decoration-none" href="https://github.com/" target="_blank"
+                        class="ms-3">
+                        <i class="fas fa-external-link-alt fs-5 me-2"></i>
+                        <span class="small-txt">Website</span>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-7 bg-white">
+                    <div class="mx-4 mt-4 ">
+                      <p class="fw-bold txt-border-bottom txt-dark-blue">About</p>
+                      <p class="fw-bold txt-border-bottom txt-dark-blue">Education</p>
+                      <p class="fw-bold txt-border-bottom txt-dark-blue">Experience</p>
+
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- buttons part -->
+          <div class="container btns-form-part">
+            <form>
+              <div class="row my-3">
+                <div class="col-12 col-md-2 mb-3 mb-md-0">
+                  <button type="submit"
+                    class="btn bg-gold text-white text-uppercase btn-gold-hover py-3 w-100">Continue</button>
+                </div>
+                <div class="col-12 col-md-2 order-md-first"><!-- to make continue btn appear first in md sm screens -->
+                  <button type="button"
+                    class="btn btn-secondary text-white text-uppercase me-3 py-3 mb-3 mb-md-0 w-100">Back</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- buttons part -->
+          <!-- End form -->
+        </div>
+      </div>
+
+
+      <div class="">
+        <div id="headingThree"></div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <!-- Start form -->
+          <div class="container mt-4 px-4 py-4 background-transparent rounded form-container d-flex">
+            <form class="col-12 col-md-6 me-md-5">
+              <div class="row">
+                <label class="mb-3">Skills</label>
+                <div class="col-md col-lg d-flex align-items-center">
+                  <input type="text" class="form-control px-3 py-2 me-3" id="skill1" placeholder="Enter your skills">
+                  <i class="far fa-trash-alt gold-txt"></i>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md col-lg d-flex align-items-center">
+                  <input type="text" class="form-control px-3 py-2 my-3 me-3" id="skill1"
+                    placeholder="Enter your skills">
+                  <i class="far fa-trash-alt gold-txt"></i>
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col-md col-lg d-flex align-items-center">
+                  <input type="text" class="form-control px-3 py-2 me-3" id="skill1" placeholder="Enter your skills">
+                  <i class="far fa-trash-alt gold-txt"></i>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md col-lg d-flex align-items-center">
+                  <input type="text" class="form-control px-3 py-2 my-3" id="skill1" placeholder="Enter your skills">
+                  <i class="far fa-trash-alt gold-txt mx-3"></i>
+                  <i class="fas fa-plus-circle gold-txt"></i>
+                </div>
+              </div>
+            </form>
+
+            <div class="col-6 d-none d-md-block">
+              <div class="container cv-container">
+                <div class="row cv-height">
+                  <div class="col-4 bg-blue-side">
+                    <img class="rounded-circle bg-secondary my-4" src="Images/" alt="" width="128px">
+
+                    <h5>First Name</h5>
+                    <p class="text-secondary">Profission</p>
+
+                    <div>
+                      <p class="bg-white rounded py-1 px-2 txt-dark-blue">surkarta, birthdate</p>
+                      <p class="bg-white rounded py-1 px-2 txt-dark-blue">number</p>
+                      <p class="bg-white rounded py-1 px-2 txt-dark-blue">email</p>
+                      <p class="bg-white rounded py-1 px-2 txt-dark-blue">city, country</p>
+                    </div>
+
+                    <p class="fw-bold mt-4">Skills</p>
+                    <p class="fw-bold mt-4">Honor & Award</p>
+                    <p class="fw-bold mt-4">Hobbies & Interest</p>
+                    <p class="fw-bold mt-4">Links and Cardentails</p>
+
+                    <div class="d-flex align-items-center">
+                      <a class="text-white text-decoration-none me-3" href="https://www.linkedin.com/" target="_blank"
+                        class="ms-3">
+                        <i class="fab fa-linkedin fs-5 me-2"></i>
+                        <span class="small-txt">Linkedin</span>
+                      </a>
+                      <a class="text-white text-decoration-none" href="https://github.com/" target="_blank"
+                        class="ms-3">
+                        <i class="fab fa-github fs-5 me-2"></i>
+                        <span class="small-txt">Github</span>
+                      </a>
+                    </div>
+                    <div class="mt-2">
+                      <a class="text-white text-decoration-none" href="https://github.com/" target="_blank"
+                        class="ms-3">
+                        <i class="fas fa-external-link-alt fs-5 me-2"></i>
+                        <span class="small-txt">Website</span>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-7 bg-white">
+                    <div class="mx-4 mt-4 ">
+                      <p class="fw-bold txt-border-bottom txt-dark-blue">About</p>
+                      <p class="fw-bold txt-border-bottom txt-dark-blue">Education</p>
+                      <p class="fw-bold txt-border-bottom txt-dark-blue">Experience</p>
+
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- buttons part -->
+          <div class="container btns-form-part">
+            <form>
+              <div class="row my-3">
+                <div class="col-12 col-md-2 mb-3 mb-md-0">
+                  <button type="submit"
+                    class="btn bg-gold text-white text-uppercase btn-gold-hover py-3 w-100">Continue</button>
+                </div>
+                <div class="col-12 col-md-2 order-md-first"><!-- to make continue btn appear first in md sm screens -->
+                  <button type="button"
+                    class="btn btn-secondary text-white text-uppercase me-3 py-3 mb-3 mb-md-0 w-100">Back</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- buttons part -->
+          <!-- End form -->
+        </div>
+      </div>
+      <div class="">
+        <div id="headingFour">
+
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+          <!-- Start form -->
+          <div class="container mt-4 px-4 py-4 background-transparent rounded form-container d-flex">
+
+            <form class="col-12 col-md-6 me-md-5">
+              <div class="row">
+                <p>Experience</p>
+              </div>
+              <div class="container bg-transparent2 golden-dashed-border py-3 px-4">
+                <div class="row">
+                  <div class="col-md col-lg">
+                    <label for="companyName" class="mb-3">Company Name</label>
+                    <input type="text" class="form-control px-3 py-2" id="companyName"
+                      placeholder="Enter your company name">
+                  </div>
+                </div>
+
+                <div class="row mt-3">
+                  <div class="col-md col-lg">
+                    <label for="position" class="mb-3">Position</label>
+                    <input type="text" class="form-control px-3 py-2" id="position" placeholder="Enter your position">
+                  </div>
+                </div>
+
+                <div class="row mt-3">
+                  <div class="col-md col-lg me-3">
+                    <label for="from" class="mb-3">From</label>
+                    <input type="text" class="form-control px-3 py-2" id="from" placeholder="">
+                  </div>
+                  <div class="col-md col-lg">
+                    <label for="to" class="mb-3 mt-3 mt-md-0">To</label>
+                    <input type="text" class="form-control px-3 py-2" id="to" placeholder="">
+                  </div>
+                </div>
+
+                <div class="row mt-3">
+                  <div class="col-md col-lg me-3">
+                    <label for="personalPhoto">Company Logo</label>
+                    <div class="col mt-3  golden-dashed-border d-flex flex-column align-items-center py-2">
+                      <img src="Images/cloud.png" alt="" width="40px">
+                      <p class="fw-bold my-2 text-center tiny-txt">Drag & drop files or
+                        <label for="personalPhoto" id="fileLink" class="gold-txt browse-txt tiny-txt">Browse</label>
+                        <input type="file" style="display: none;" id="personalPhoto" onchange="updateFileLink(this)">
+                      </p>
+                      <p class="text-secondary tiny-txt text-center">Supported formates: JPEG, PNG, GIF, MP4, PDF,
+                        PSD,
+                        AI, Word, PPT
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md col-lg-8">
+                    <label for="description" class="mb-3 mt-3 mt-md-0">Description</label>
+                    <textarea class="form-control px-3 py-2" id="description" rows="5" cols
+                      placeholder="Enter text"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-end mt-3">
+                <i class="far fa-trash-alt gold-txt mx-3"></i>
+                <i class="fas fa-plus-circle gold-txt"></i>
+              </div>
+            </form>
+
+            <div class="col-6 d-none d-md-block">
+              <div class="container cv-container">
+                <div class="row cv-height">
+                  <div class="col-4 bg-blue-side">
+                    <img class="rounded-circle bg-secondary my-4" src="Images/r.jpeg" alt="" width="128px">
+
+                    <h5>First Name</h5>
+                    <p class="text-secondary">Profission</p>
+
+                    <div>
+                      <p class="bg-white rounded py-1 px-2 txt-dark-blue">surkarta, birthdate</p>
+                      <p class="bg-white rounded py-1 px-2 txt-dark-blue">number</p>
+                      <p class="bg-white rounded py-1 px-2 txt-dark-blue">email</p>
+                      <p class="bg-white rounded py-1 px-2 txt-dark-blue">city, country</p>
+                    </div>
+
+                    <p class="fw-bold mt-4">Skills</p>
+                    <p class="fw-bold mt-4">Honor & Award</p>
+                    <p class="fw-bold mt-4">Hobbies & Interest</p>
+                    <p class="fw-bold mt-4">Links and Cardentails</p>
+
+                    <div class="d-flex align-items-center">
+                      <a class="text-white text-decoration-none me-3" href="https://www.linkedin.com/" target="_blank"
+                        class="ms-3">
+                        <i class="fab fa-linkedin fs-5 me-2"></i>
+                        <span class="small-txt">Linkedin</span>
+                      </a>
+                      <a class="text-white text-decoration-none" href="https://github.com/" target="_blank"
+                        class="ms-3">
+                        <i class="fab fa-github fs-5 me-2"></i>
+                        <span class="small-txt">Github</span>
+                      </a>
+                    </div>
+                    <div class="mt-2">
+                      <a class="text-white text-decoration-none" href="https://github.com/" target="_blank"
+                        class="ms-3">
+                        <i class="fas fa-external-link-alt fs-5 me-2"></i>
+                        <span class="small-txt">Website</span>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-7 bg-white">
+                    <div class="mx-4 mt-4 ">
+                      <p class="fw-bold txt-border-bottom txt-dark-blue">About</p>
+                      <p class="fw-bold txt-border-bottom txt-dark-blue">Education</p>
+                      <p class="fw-bold txt-border-bottom txt-dark-blue">Experience</p>
+
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- buttons part -->
+          <div class="container btns-form-part">
+            <form>
+              <div class="row my-3">
+                <div class="col-12 col-md-2 mb-3 mb-md-0">
+                  <button type="submit"
+                    class="btn bg-gold text-white text-uppercase btn-gold-hover py-3 w-100">Continue</button>
+                </div>
+                <div class="col-12 col-md-2 order-md-first"><!-- to make continue btn appear first in md sm screens -->
+                  <button type="button"
+                    class="btn btn-secondary text-white text-uppercase me-3 py-3 mb-3 mb-md-0 w-100">Back</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- buttons part -->
+          <!-- End form -->
+        </div>
+      </div>
+      <div class="">
+        <div id="headingFive">
+
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+          your content goes here...
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End stepper -->
+
+
+
+  <script src="js/script.js"></script>
+
+  <script>
+    const stepButtons = document.querySelectorAll('.step-button');
+    const progress = document.querySelector('#progress');
+
+    Array.from(stepButtons).forEach((button, index) => {
+      button.addEventListener('click', () => {
+        progress.setAttribute('value', index * 100 / (stepButtons.length - 1));//there are 3 buttons. 2 spaces.
+
+        stepButtons.forEach((item, secindex) => {
+          if (index > secindex) {
+            item.classList.add('done');
+          }
+          if (index < secindex) {
+            item.classList.remove('done');
+          }
+        })
+      })
+    })
+  </script>
+  <!-- for country code -->
+  <script src="js/countrycodejs/intlTelInput.js"></script>
+  <script>
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input, {});
+  </script>
+
+
+  <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

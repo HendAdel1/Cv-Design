@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>about</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha384-all.min.css" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+
+  <!-- Start small title -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p class="my-2">Create CV</p>
+        <div class="gold-border"></div>
+        <p class="pt-2">6th June 2023</p>
+      </div>
+    </div>
+  </div>
+  <!-- End small title -->
+
+  <!-- Start big title -->
+  <div class="container pt-4">
+    <div class="row">
+      <h2>Customize your cv</h2>
+      <p class="col-md-12 col-lg-5">Here you can create your CV by answering question and getting it
+        ready for download or applying to jobs through the platform.
+      </p>
+    </div>
+  </div>
+  <!-- End big title -->
+
+  <!-- Start categories -->
+  <div class="container px-4 py-4 background-transparent rounded">
+    <div class="row">
+      <div class="col d-flex align-items-center">
+        <div class="btn-golden-border me-3 active">1</div>
+        <span class="text-uppercase">main information</span>
+      </div>
+      <div class="col d-flex align-items-center">
+        <div class="btn-golden-border me-3 active">2</div>
+        <span class="text-uppercase">about</span>
+      </div>
+      <div class="col d-flex align-items-center">
+        <div class="btn-golden-border me-3">3</div>
+        <span class="text-uppercase">skills</span>
+      </div>
+      <div class="col d-flex align-items-center">
+        <div class="btn-golden-border me-3">4</div>
+        <span class="text-uppercase">experience</span>
+      </div>
+      <div class="col d-flex align-items-center">
+        <div class="btn-golden-border me-3">5</div>
+        <span class="text-uppercase">education</span>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- End categories -->
+
+  <!-- Start form -->
+  <div class="container mt-4 px-4 py-4 background-transparent rounded form-container d-flex">
+    <form class="col-12 col-md-6 me-md-5">
+      <div class="row my-3">
+        <div class="col-md col-lg me-3">
+          <label for="textareaField" class="mb-3">About</label>
+          <textarea class="form-control px-3 py-2" id="textareaField" rows="5" cols placeholder="Enter text"></textarea>
+        </div>
+      </div>
+    </form>
+
+    <div class="col-6 d-none d-md-block">
+      <div class="container cv-container">
+        <div class="row cv-height">
+          <div class="col-4 bg-blue-side">
+            <img class="rounded-circle bg-secondary my-4" src="Images/r.jpeg" alt="" width="128px">
+
+            <h5>First Name</h5>
+            <p class="text-secondary">Profission</p>
+
+            <div>
+              <p class="bg-white rounded py-1 px-2 txt-dark-blue">surkarta, birthdate</p>
+              <p class="bg-white rounded py-1 px-2 txt-dark-blue">number</p>
+              <p class="bg-white rounded py-1 px-2 txt-dark-blue">email</p>
+              <p class="bg-white rounded py-1 px-2 txt-dark-blue">city, country</p>
+            </div>
+
+            <p class="fw-bold mt-4">Skills</p>
+            <p class="fw-bold mt-4">Honor & Award</p>
+            <p class="fw-bold mt-4">Hobbies & Interest</p>
+            <p class="fw-bold mt-4">Links and Cardentails</p>
+
+            <div class="d-flex align-items-center">
+              <a class="text-white text-decoration-none me-3" href="https://www.linkedin.com/" target="_blank"
+                class="ms-3">
+                <i class="fab fa-linkedin fs-5 me-2"></i>
+                <span class="small-txt">Linkedin</span>
+              </a>
+              <a class="text-white text-decoration-none" href="https://github.com/" target="_blank" class="ms-3">
+                <i class="fab fa-github fs-5 me-2"></i>
+                <span class="small-txt">Github</span>
+              </a>
+            </div>
+            <div class="mt-2">
+              <a class="text-white text-decoration-none" href="https://github.com/" target="_blank" class="ms-3">
+                <i class="fas fa-external-link-alt fs-5 me-2"></i>
+                <span class="small-txt">Website</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-7 bg-white">
+            <div class="mx-4 mt-4 ">
+              <p class="fw-bold txt-border-bottom txt-dark-blue">About</p>
+              <p class="fw-bold txt-border-bottom txt-dark-blue">Education</p>
+              <p class="fw-bold txt-border-bottom txt-dark-blue">Experience</p>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- buttons part -->
+  <div class="container btns-form-part">
+    <form>
+      <div class="row my-3">
+        <div class="col-12 col-md-2 mb-3 mb-md-0">
+          <button type="submit" class="btn bg-gold text-white text-uppercase btn-gold-hover py-3 w-100">Continue</button>
+        </div>
+        <div class="col-12 col-md-2 order-md-first"><!-- to make continue btn appear first in md sm screens -->
+          <button type="button" class="btn btn-secondary text-white text-uppercase me-3 py-3 mb-3 mb-md-0 w-100">Back</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!-- buttons part -->
+  <!-- End form -->
+
+  <script src="js/script.js"></script>
+
+  <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
